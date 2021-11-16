@@ -27,7 +27,7 @@ struct ContentView: View {
                        
                      ExtractedView(shortcutName: "Instagram Downloader", numberOfAction: "7 actions", image: Image(systemName: "arrow.down.square.fill"), myColor: .red)
                      
-                     ExtractedView(shortcutName: "myLocation", numberOfAction: "15 actions", image: Image(systemName: "location.circle"), myColor: .yellow)
+                     ExtractedView(shortcutName: "My Location", numberOfAction: "15 actions", image: Image(systemName: "location.circle"), myColor: .yellow)
 
                      ExtractedView(shortcutName: "فتح واتساب", numberOfAction: "20 actions", image: Image(systemName: "message"), myColor: .green)
                  }
@@ -74,9 +74,10 @@ struct ExtractedView: View {
                 Text(shortcutName)
                     .fontWeight(.bold)
                     .padding(.top, 12)
-                   
+                    .minimumScaleFactor(0.1)
                 Text(numberOfAction)
                     .font(.footnote)
+                    .minimumScaleFactor(0.1)
                 
             }.padding(.leading)
                 .foregroundColor(.white)
